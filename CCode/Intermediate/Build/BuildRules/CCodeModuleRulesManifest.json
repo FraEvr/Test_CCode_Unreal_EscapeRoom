@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\Projets Unreal\\CCode\\Source\\CCode\\CCode.Build.cs",
+		"D:\\Projets Unreal\\CCode\\Source\\CCode.Target.cs",
+		"D:\\Projets Unreal\\CCode\\Source\\CCodeEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}

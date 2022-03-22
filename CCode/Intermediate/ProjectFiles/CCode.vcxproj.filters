@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\CCode.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{9E201BD9-7E67-4017-91AC-B70AA97348F3}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\CCode.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\CCodeEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{2A60E3BD-37F0-4372-9147-E7B94ED8D0C8}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\CCode">
+      <UniqueIdentifier>{F6CE2018-D0BC-4926-BCC6-A909C76C3A77}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\CCode\CCode.Build.cs">
+      <Filter>Source\CCode</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\CCode\CCode.cpp">
+      <Filter>Source\CCode</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CCode\CCode.h">
+      <Filter>Source\CCode</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CCode\CCodeGameModeBase.cpp">
+      <Filter>Source\CCode</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CCode\CCodeGameModeBase.h">
+      <Filter>Source\CCode</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CCode\EventTriggerBox.cpp">
+      <Filter>Source\CCode</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CCode\EventTriggerBox.h">
+      <Filter>Source\CCode</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CCode\MainPlayerCharacter.cpp">
+      <Filter>Source\CCode</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CCode\MainPlayerCharacter.h">
+      <Filter>Source\CCode</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\CCode\MyTriggerVolume.cpp">
+      <Filter>Source\CCode</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\CCode\MyTriggerVolume.h">
+      <Filter>Source\CCode</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

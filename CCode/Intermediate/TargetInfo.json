@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "CCode",
+			"Path": "D:\\Projets Unreal\\CCode\\Source\\CCode.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "CCodeEditor",
+			"Path": "D:\\Projets Unreal\\CCode\\Source\\CCodeEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
