@@ -133,6 +133,10 @@ void EmptyLinkFunctionForGeneratedCodeMyTriggerVolume() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_matchActor_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_matchActor;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_door_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_door;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -157,12 +161,24 @@ void EmptyLinkFunctionForGeneratedCodeMyTriggerVolume() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyTriggerVolume_Statics::NewProp_matchActor_MetaData[] = {
 		{ "Category", "MyTriggerVolume" },
+		{ "Comment", "//Variable stockant l'acteur devant ?tre associ? au trigger pour l'activer\n" },
 		{ "ModuleRelativePath", "MyTriggerVolume.h" },
+		{ "ToolTip", "Variable stockant l'acteur devant ?tre associ? au trigger pour l'activer" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyTriggerVolume_Statics::NewProp_matchActor = { "matchActor", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyTriggerVolume, matchActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMyTriggerVolume_Statics::NewProp_matchActor_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyTriggerVolume_Statics::NewProp_matchActor_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyTriggerVolume_Statics::NewProp_door_MetaData[] = {
+		{ "Category", "MyTriggerVolume" },
+		{ "Comment", "//Variable de la porte devant s'ouvrir gr?ce ? l'activation du trigger\n" },
+		{ "ModuleRelativePath", "MyTriggerVolume.h" },
+		{ "ToolTip", "Variable de la porte devant s'ouvrir gr?ce ? l'activation du trigger" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMyTriggerVolume_Statics::NewProp_door = { "door", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyTriggerVolume, door), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMyTriggerVolume_Statics::NewProp_door_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyTriggerVolume_Statics::NewProp_door_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMyTriggerVolume_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyTriggerVolume_Statics::NewProp_matchActor,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMyTriggerVolume_Statics::NewProp_door,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMyTriggerVolume_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMyTriggerVolume>::IsAbstract,
@@ -191,7 +207,7 @@ void EmptyLinkFunctionForGeneratedCodeMyTriggerVolume() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMyTriggerVolume, 3660512863);
+	IMPLEMENT_CLASS(AMyTriggerVolume, 3547728540);
 	template<> CCODE_API UClass* StaticClass<AMyTriggerVolume>()
 	{
 		return AMyTriggerVolume::StaticClass();

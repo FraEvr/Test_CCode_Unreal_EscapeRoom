@@ -12,25 +12,27 @@ class CCODE_API AMainPlayerCharacter : public ACharacter
 	GENERATED_BODY()
 
 public:
-	// Sets default values for this character's properties
 	AMainPlayerCharacter();
 
+	//---------------------------------------------
+	//FONCTIONS APPELLEES DANS LE PLAYER CONTROLLER
+	//---------------------------------------------
+	
+	//Fonction de déplacement avant/arrière en fonction d'une valeur donnée
+	void MoveForwardBackward(float _value);
+
+	//Fonction de déplacement gauche/droite en fonction d'une valeur donnée
+	void MoveLeftRight(float _value);
+
+	//Fonction appellant le saut
+	void PerformJump();
+
 protected:
-	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	AActor* pickedUpActor;
-	UStaticMeshComponent* pickedUpActorMesh;
-
-	void MoveForwardBackward(float _value);
-	void MoveLeftRight(float _value);
-	void Grab();
+	
 
 public:	
-	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
-	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
 };
